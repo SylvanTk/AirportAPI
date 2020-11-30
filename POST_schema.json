@@ -1,0 +1,95 @@
+{
+    "title" : "POST",
+    "required": [
+      "data"
+    ],
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "company",
+            "flight_number",
+            "destination",
+            "departure_time",
+            "arrival_time",
+            "validity_start",
+            "validity_end",
+            "airplane_type"
+          ],
+          "properties": {
+            "company": {
+              "type": "string",
+              "description" : "Company name"
+            },
+            "flight_number": {
+              "type": "string",
+              "description" : "Flight Number"
+            },
+            "destination": {
+              "type": "string",
+              "description" : "Airplane destination"
+            },
+            "departure_time": {
+              "type": "string",
+              "description" : "Time of departure"
+            },
+            "arrival_time": {
+              "type": "string",
+              "description" : "Time of arrival"
+            },
+            "validity_start": {
+              "type": "string",
+              "description" : "Start of fights period",
+              "example" : "01.01.1999"
+            },
+            "validity_end": {
+              "type": "string",
+              "description" : "End of flights period",
+              "example" : "02.01.1999"
+            },
+            "airplane_type": {
+              "type": "string",
+              "description" : "Airplane type"
+            },
+            "mo": {
+              "type": "integer",
+              "description" : "Monday",
+              "default": 0
+            },
+            "tu": {
+              "type": "integer",
+              "description" : "Tuesday",
+              "default": 0
+            },
+            "we": {
+              "type": "integer",
+              "description" : "Wednesay",
+              "default": 0
+            },
+            "th": {
+              "type": "integer",
+              "description" : "Thursday",
+              "default": 0
+            },
+            "fr": {
+              "type": "integer",
+              "description" : "Friday",
+              "default": 0
+            },
+            "sa": {
+              "type": "integer",
+              "description" : "Saturday",
+              "default": 0
+            },
+            "su": {
+              "type": "integer",
+              "description" : "Sunday",
+              "default": 0
+            }
+          }
+        }
+      }
+    }
+}

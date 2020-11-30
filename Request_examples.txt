@@ -1,0 +1,5 @@
+curl -i -H "Content-Type: application/json" -X POST -d '{"data": [{"company":"aeroflot","flight_number":"22f","destination":"Krasnodar", "departure_time": "11:30","arrival_time": "13:30","validity_start": "3.03.2018","validity_end": "2.03.2019","airplane_type": "kek","days":65},{"company":"aeroflot","flight_number":"22f","destination":"Krasnodar", "departure_time": "11:30","arrival_time": "13:30","validity_start": "3.03.2018","validity_end": "2.03.2019","airplane_type": "kek","mo":1,"we":1}]}' http://127.0.0.1:5000/api/flights
+
+curl -i -H "Content-Type: application/json" -X PUT -d '{"data": {"company":"aero123flot","flight_number":"22123f","destination":"Krasno123dar","su":1,"id":"f9468064"}}' http://127.0.0.1:5000/api/flights
+
+curl -i -H "Content-Type: application/json" -X DELETE -d '{"data": {"id": "f9468064"}}' http://127.0.0.1:5000/api/flights
